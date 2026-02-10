@@ -1,1 +1,24 @@
+# Editor
 .vscode/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+coverage/
+
+# Framework caches
+.next/
+.vite/
+.cache/
+
+# Env / secrets
+.env
+.env.*
