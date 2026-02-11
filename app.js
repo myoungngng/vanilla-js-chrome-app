@@ -1,25 +1,40 @@
-function plus(apple) {
-    console.log(apple - 5);
-}
-// console.log(apple - 1); // apple은 지역 변수여서 함수 plus 밖에서는 접근 불가
-plus(50, 10, 12, 34, 15, 48, 5 ,6, 4); //첫 번째 argument만 받아서 45 출력
+const calculator = {
+    add(a, b) {
+        //console.log("Hello"); // 이 줄은 출력되지만
+        return a + b;
+        //console.log("Bye"); // 이 줄은 출력되지 않음. return문 다음에는 출력 x.
+    },
+
+    subtract(a, b) {
+        return a - b;
+    },
+
+    divide(a, b) {
+        return a / b;
+    },
+
+    multiply(a, b) {
+        return a * b;
+    },
+
+    power(a, b) {
+        return a ** b;
+    },
+};
+
+const addResult = calculator.add(10, 5); // 15
+const subtractResult = calculator.subtract(addResult, 13); // 2
+const divideResult = calculator.divide(130, subtractResult); // 65
+const multiplyResult = calculator.multiply(divideResult, addResult); // 975
+const powerResult = calculator.power(multiplyResult, subtractResult); // 950,625
 
 /*
-function plus(apple, banana) {
-    console.log(apple + banana);
+const age = 95;
+function calculatorKrAge(ageOfForeigner) {
+    return ageOfForeigner + 2;
 }
 
-plus(5, 10);
-plus(5.45135, 48110);
-plus(0.01, 4);
+const krAge = calculatorKrAge(age);
 
-const player = {
-    name: "gil-dong",
-    age: 98,
-};
-console.log(player);
-player.name = "myoung";
-console.log(player);
-player.cute = "me";
-console.log(player, console);
+console.log(krAge);
 */

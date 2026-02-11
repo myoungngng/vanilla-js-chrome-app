@@ -2,7 +2,8 @@
 const calculator = {
     add(a, b) {
     //add: function (a, b) {
-        console.log(`${a}과 ${b}의 합은 ${a + b} 입니다.`);
+        alert(`${a}과 ${b}의 합은 ${a + b} 입니다.`); // 경고 메시지로 결과 출력
+        //console.log(`${a}과 ${b}의 합은 ${a + b} 입니다.`); // 콘솔창으로 결과 출력
     },
 
     subtract(a, b) {
@@ -26,6 +27,7 @@ const calculator = {
     },
 };
 
+// console.log(calculator.add(10, 5));
 calculator.add(10, 5);
 calculator.subtract(10, 5);
 calculator.divide(10, 5);
